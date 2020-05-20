@@ -7,12 +7,16 @@ namespace ORACLE_DB
 
     abstract public class OracleDB
     {
+        public interface IConnectionInfo
+        {
+            string host { get; }
+            string port { get; }
+            string service_name { get; }
+            string user_id { get; }
+            string password { get; }
+        }
 
-        abstract protected string host { get; }
-        abstract protected string port { get; }
-        abstract protected string service_name { get; }
-        abstract protected string user_id { get; }
-        abstract protected string password { get; }
+        abstract protected IConnectionInfo connectionInfo { get; }
 
         OracleConnection GetConnection()
         {
@@ -36,7 +40,14 @@ namespace ORACLE_DB
                 ";Persist Security Info=True;User ID=" + user_id + ";Password=" + password;
             }
 
-            return new OracleConnection(GetConnectionString(host, port, service_name, user_id, password));
+            string ConnectionString = GetConnectionString(
+                connectionInfo.host,
+                connectionInfo.port,
+                connectionInfo.service_name,
+                connectionInfo.user_id,
+                connectionInfo.password
+                );
+            return new OracleConnection(ConnectionString);
         }
 
         protected DataTable DbDataAdapter_Fill(string sql)
