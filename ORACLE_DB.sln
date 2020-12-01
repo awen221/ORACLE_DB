@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.438
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORACLE_DB", "ORACLE_DB.csproj", "{003821EA-06E4-4389-9A36-582B549D6CE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORACLE_DB", "ORACLE_DB\ORACLE_DB.csproj", "{2D7EFC7B-302F-4FA2-8A05-DDB9188A8278}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{003821EA-06E4-4389-9A36-582B549D6CE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{003821EA-06E4-4389-9A36-582B549D6CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{003821EA-06E4-4389-9A36-582B549D6CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{003821EA-06E4-4389-9A36-582B549D6CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D7EFC7B-302F-4FA2-8A05-DDB9188A8278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D7EFC7B-302F-4FA2-8A05-DDB9188A8278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D7EFC7B-302F-4FA2-8A05-DDB9188A8278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D7EFC7B-302F-4FA2-8A05-DDB9188A8278}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AB0316F4-9061-4FB4-9207-3BB9D1503B99}
+		SolutionGuid = {D9ED13EC-085B-4755-9491-E8593E01E6ED}
 	EndGlobalSection
 EndGlobal
