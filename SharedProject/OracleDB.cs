@@ -50,7 +50,7 @@ namespace ORACLE_DB
             return new OracleConnection(ConnectionString);
         }
 
-        virtual protected DataTable DbDataAdapter_Fill(string sql)
+        virtual public DataTable DbDataAdapter_Fill(string sql)
         {
             DataTable dataTable = new DataTable();
 
@@ -70,7 +70,7 @@ namespace ORACLE_DB
             return dataTable;
         }
 
-        virtual protected int ExecuteNonQuery(string sql)
+        virtual public int ExecuteNonQuery(string sql)
         {
             int returnCode;
 
